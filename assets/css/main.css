@@ -1883,7 +1883,7 @@ input, select, textarea {
 
 		.image.featured {
 			display: block;
-			margin: 0 0 2em 0;
+			margin: 0 0 .5em 0;
 		}
 
 			.image.featured img {
@@ -2277,6 +2277,17 @@ input, select, textarea {
 			color: inherit;
 		}
 
+			.wrapper.style3 .test-data{
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				gap: 1.5em;
+			}
+
+				.wrapper.style3 .test-data section{
+					width: 250px;
+				}
+
 		.wrapper.style4 {
 			background: #fff;
 			color: inherit;
@@ -2429,6 +2440,7 @@ input, select, textarea {
 			-webkit-animation: reveal-header 0.5s;
 			-ms-animation: reveal-header 0.5s;
 			animation: reveal-header 0.5s;
+			position: fixed;
 		}
 
 		#header.alt {
@@ -2913,9 +2925,9 @@ input, select, textarea {
 				margin: 1em 0 1em 0;
 			}
 
-				section:first-child {
+				/* section:first-child {
 					margin-top: 0;
-				}
+				} */
 
 				.img-service {
 					width: 400px;
