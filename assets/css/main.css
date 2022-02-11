@@ -176,6 +176,15 @@ input, select, textarea {
 		padding: 1em 0 1em 2em;
 	}
 
+	.wp-icon {
+		width: 40px;
+		height: 40px;
+		position: fixed;
+		bottom: 10px;
+		right: 10px;
+		z-index: 10;
+	}
+
 /* Container */
 
 	.container {
@@ -1946,13 +1955,13 @@ input, select, textarea {
 				top: -0.2em;
 			}
 
-			.icon.circle.fa-twitter {
-				background: #70aecd;
+			.icon.circle.fa-whatsapp {
+				background: #64b762;
 				color: #fff;
 			}
 
-				.icon.circle.fa-twitter:hover {
-					background: #7fb7d2;
+				.icon.circle.fa-whatsapp:hover {
+					background: #64b761;
 				}
 
 			.icon.circle.fa-facebook-f {
@@ -1962,33 +1971,6 @@ input, select, textarea {
 
 				.icon.circle.fa-facebook-f:hover {
 					background: #829bc9;
-				}
-
-			.icon.circle.fa-google-plus-g {
-				background: #db6b67;
-				color: #fff;
-			}
-
-				.icon.circle.fa-google-plus-g:hover {
-					background: #df7b77;
-				}
-
-			.icon.circle.fa-github {
-				background: #dcad8b;
-				color: #fff;
-			}
-
-				.icon.circle.fa-github:hover {
-					background: #e1b89b;
-				}
-
-			.icon.circle.fa-dribbble {
-				background: #da83ae;
-				color: #fff;
-			}
-
-				.icon.circle.fa-dribbble:hover {
-					background: #df93b8;
 				}
 
 		.icon.featured {
@@ -2337,7 +2319,8 @@ input, select, textarea {
 	}
 
 	#header {
-		background: #fff;
+		background: #899f9bf0;
+		/* background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;; */
 		box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.075);
 		color: inherit;
 		cursor: default;
@@ -2357,6 +2340,10 @@ input, select, textarea {
 
 			#header h1 span {
 				font-weight: 300;
+			}
+
+			#header h1 a {
+				color: #fefefe;
 			}
 
 		#header nav {
@@ -2384,7 +2371,7 @@ input, select, textarea {
 
 					#header nav ul li a {
 						border: solid 1px transparent;
-						color: inherit;
+						color: #fefefe;
 						display: inline-block;
 						line-height: 1em;
 						padding: 0.6em 0.75em;
@@ -2573,7 +2560,7 @@ input, select, textarea {
 		cursor: default;
 		padding: 6em 0;
 		text-align: center;
-		height: 100vh;
+		height: 70vh;
 	}
 
 		#banner .inner {
@@ -2680,15 +2667,25 @@ input, select, textarea {
 
 	#cta img {
 		width: 200px;
-		height: 300px;
+		height: 260px;
 	}
 
-	#cta.carrousel {
+	#cta .carrousel {
 		flex-wrap: nowrap;
 		display: flex;
-		overflow-x: hidden;
+		overflow-x: auto;
 		gap: 1em;
 	}
+
+		#cta .carrousel::-webkit-scrollbar {
+			height: 7px;
+		}
+
+		#cta .carrousel::-webkit-scrollbar-thumb {
+			background-color: #66316c8f;
+			border-bottom: 2px solid #624e5c7b;
+			border-radius: 5px;
+		}
 
 /* Footer */
 
