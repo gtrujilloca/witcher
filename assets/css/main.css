@@ -129,7 +129,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: inherit;
+		color: #fefefe;
 		font-weight: 300;
 		line-height: 1.75em;
 		margin-bottom: 1em;
@@ -2198,7 +2198,7 @@ input, select, textarea {
 
 	.wrapper {
 		margin-bottom: 5em;
-		padding: 5em;
+		padding: 0em 5em;
 	}
 
 		.wrapper.style1 {
@@ -2255,7 +2255,7 @@ input, select, textarea {
 				}
 
 		.wrapper.style3 {
-			background: #fff;
+			/* background: #fff; */
 			color: inherit;
 		}
 
@@ -2692,9 +2692,21 @@ input, select, textarea {
 	#footer {
 		background: #E8EEF4;
 		color: #7c8081;
-		padding: 5em 5em 10em 5em;
+		padding: 1em 5em;
 		text-align: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 135px;
 	}
+
+		#footer .flat {
+			width: 200px;
+			height: 150px;
+			position: relative;
+			bottom: 3px;
+			left: -40vw;
+		}
 
 		#footer .copyright {
 			font-size: 0.8em;
@@ -2735,6 +2747,11 @@ input, select, textarea {
 				margin-bottom: 4em;
 			}
 
+			#footer .flat {
+				bottom: 3px;
+				left: -32.7vw;
+			}
+
 	}
 
 /* Normal */
@@ -2767,12 +2784,17 @@ input, select, textarea {
 
 			.wrapper {
 				margin-bottom: 4em;
-				padding: 4em 3em;
+				padding: 0em 3em;
 			}
 
 				.wrapper.style4 {
 					padding: 3em;
 				}
+
+			#footer .flat {
+				bottom: 3px;
+				left: -27vw;
+			}
 
 		/* Header */
 
@@ -2795,9 +2817,9 @@ input, select, textarea {
 
 		/* Footer */
 
-			#footer {
+			/* #footer {
 				padding: 4em;
-			}
+			} */
 
 	}
 
@@ -2837,11 +2859,16 @@ input, select, textarea {
 					height: 100px;
 				}
 
+			#footer .flat {
+				bottom: 3px;
+				left: -27vw;
+			}
+
 		/* Wrapper */
 
 			.wrapper {
 				margin-bottom: 3em;
-				padding: 3em 2.5em;
+				padding: 0em 2.5em;
 			}
 
 				.wrapper.special br {
@@ -3020,6 +3047,14 @@ input, select, textarea {
 
 			#footer {
 				padding: 4em 1.5em;
+			}
+
+			#footer .flat {
+				width: 170px;
+				height: 130px;
+				position: relative;
+				bottom: -1px;
+				left: -163px;
 			}
 
 		/* Nav */
@@ -3314,7 +3349,7 @@ input, select, textarea {
 
 			.wrapper {
 				margin-bottom: 2.5em;
-				padding: 2.25em 1.5em;
+				padding: 0em 1.5em;
 			}
 
 				.wrapper.special br {
@@ -3375,6 +3410,10 @@ input, select, textarea {
 				padding-bottom: 0;
 			}
 
+			.flat {
+				display: none;
+			}
+
 		/* CTA */
 
 			#cta {
@@ -3386,6 +3425,7 @@ input, select, textarea {
 
 			#footer {
 				padding: 3em 1.5em;
+				height: auto;
 			}
 
 				#footer .copyright li {
